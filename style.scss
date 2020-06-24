@@ -1,0 +1,261 @@
+@font-face {
+  src: url(Images-fonts/futura-heavy.ttf);
+  font-family: heavy;
+}
+
+@font-face {
+  src: url(Images-fonts/futura-book.ttf);
+  font-family: book;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+// NavBar section (start)
+.navbar {
+  .navbar_logo {
+    width: 100px;
+    position: absolute;
+    right: 200px;
+  }
+  .navbar_toggle {
+    position: absolute;
+    top: 0.75rem;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 12px;
+
+    .navbar_bar {
+      margin-left: 0px;
+      height: 3px;
+      width: 27px;
+      background-color: #ab00ff;
+      border-radius: 100px;
+      margin-left: 0px;
+    }
+    #navbar_bar2 {
+      width: 19px;
+      position: relative;
+      left: 8px;
+    }
+  }
+  display: flex;
+  align-items: center;
+
+  .brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .navbar_links {
+    li:hover {
+      background-color: #ab00ff;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #393939;
+          padding: 1rem;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    .navbar_links {
+      width: 100%;
+      ul {
+        flex-direction: column;
+        width: 100%;
+        li {
+          text-align: center;
+          a {
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+    .navbar_links.active {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .navbar_toggle {
+    display: none;
+  }
+
+  .navbar_links {
+    display: flex;
+  }
+}
+
+// NavBar section (end)
+
+.hero {
+background-image:  url("./Images-fonts/hero-bg-texture.png");
+width: 100%;
+height: 500px;
+
+
+  .hero_title {
+    padding-top: 130px;
+    font-size: 13px;
+    font-family: heavy;
+  }
+  .hero_card {
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    box-shadow: 0 0 20px -10px;
+  }
+}
+.brand_title {
+  
+  font-family: heavy;
+  text-align: center;
+}
+.cards {
+  padding-top: 250px;
+  .cards_picture {
+    width: 320px;
+    margin-top: 50px;
+  }
+
+  .cards_parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards_title {
+    text-align: center;
+    font-family: heavy;
+    color: #ab00ff;
+    margin-bottom: 70px;
+  }
+
+  .cards_card {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border: solid black;
+    border-width: 0px;
+    border-radius: 5%;
+    box-shadow: 0 0 20px -10px;
+    background-color: white;
+    height: 130px;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    font-family: book;
+    
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .brands_div {
+    img {
+      width: 130px;
+      padding: 20px;
+    }
+
+    .parent_icon1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .parent_icon2 {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.footer {
+  background: linear-gradient(#ab00ff, #007bff);
+  width: 100%;
+  height: 450px;
+
+  .footer_button {
+    border: none;
+    width: 90px;
+    height: 20px;
+    font-family: book;
+  }
+
+  .footer_title {
+    color: white;
+    font-family: heavy;
+    text-align: center;
+  }
+
+  .footer_email {
+    border: none;
+    background-color: grey;
+    border-radius: 7px;
+    height: 20px;
+  }
+  .footer_button {
+    border-radius: 7px;
+  }
+  .footer_parent {
+    height: 82%;
+    display: flex;
+    justify-content: flex-end;
+
+    .footer_links {
+      list-style-type: none;
+      font-family: book;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 5px;
+      align-self: flex-end;
+     
+    }
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: "book";
+        font-weight: bold;
+        font-size: 15px;
+        margin: 4px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
