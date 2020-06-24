@@ -36,7 +36,7 @@ body {
     .navbar_bar {
       margin-left: 0px;
       height: 3px;
-      width: 27px;
+      width: 21px;
       background-color: #ab00ff;
       border-radius: 100px;
       margin-left: 0px;
@@ -78,47 +78,19 @@ body {
   }
 }
 
-@media (max-width: 400px) {
-  .navbar_links {
-    display: none;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    .navbar_links {
-      width: 100%;
-      ul {
-        flex-direction: column;
-        width: 100%;
-        li {
-          text-align: center;
-          a {
-            padding: 0.5rem 1rem;
-          }
-        }
-      }
-    }
-    .navbar_links.active {
-      display: flex;
-    }
-  }
-}
-
-@media (min-width: 550px) {
-  .navbar_toggle {
-    display: none;
-  }
-
-  .navbar_links {
-    display: flex;
-  }
-}
 
 // NavBar section (end)
 
 .hero {
-background-image:  url("./Images-fonts/hero-bg-texture.png");
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+align-items: center;
+background-image: url("./Images-fonts/hero-bg-texture.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 width: 100%;
 height: 500px;
 
@@ -223,9 +195,10 @@ height: 500px;
 
   .footer_email {
     border: none;
-    background-color: grey;
-    border-radius: 7px;
-    height: 20px;
+    border-radius: 10px;
+    height: 23px;
+    background-color: rgba(255, 255, 255, 0.5);
+    ::placeholder{color: white;} 
   }
   .footer_button {
     border-radius: 7px;
@@ -259,3 +232,42 @@ height: 500px;
     }
   }
 }
+
+@media (max-width: 400px) {
+  .navbar_links {
+    display: none;
+  }
+
+    .navbar_links {
+      width: 100%;
+      ul {
+        flex-direction: column;
+        width: 100%;
+        li {
+          text-align: center;
+          a {
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+    .navbar_links.active {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  
+  .navbar_toggle {
+    display: none;
+  }
+
+  .navbar_links {
+    display: flex;
+  }
+}
+
+
+
+
