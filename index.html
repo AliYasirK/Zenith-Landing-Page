@@ -1,90 +1,86 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith Landing Page</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-    <!-- NavBar start -->
-    <nav class="navbar">
-        <div class="navbar_brand-title"></div>  
-        <a href="#" class="navbar_toggle">
-            <img class="navbar_logo" src="Images-fonts/zenith-logo.png">
-            <span class="navbar_bar"></span>
-            <span id="navbar_bar2" class="navbar_bar"></span>
-        </a>
-        <div class="navbar_links">
-            <ul>
-                <li><a href="#">Integrations</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Get Zenith</a></li>
-
-            </ul>
-        </div>
-
-    </nav>
-    <!-- NavBar end -->
-
-    <div class="hero">
-        <div class="hero_title"> <h1>All your<br> communication. <br> One place. </h1> </div>
-        <img class="hero_card" src="Images-fonts/inbound-card.png">
-    </div>
-
-    <section class="cards">
-      <h2 class="cards_title">The features that matter</h2>
-        <div class="cards_parent">
-            <div class="cards_card"> <p>Mark off your completed threads in one place</p> <img src="Images-fonts/features-checkboxes.png" alt="checkbox"> </div>
-            <div class="cards_card"> <p>Integrate all your communications platforms</p> <img src="Images-fonts/features-integrations.png" alt="integration icons"></div>
-            <div class="cards_card"><p>See all your notifications in one place</p> <img src="Images-fonts/features-notifications.png" alt="notifications icons"></div>
-            <div class="cards_picture"><img class="cards_picture" src="Images-fonts/zenith-dasboard.png"></div>
-        </div> 
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zenith Landing Page</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
     
-    <h2 class="brand_title"> Your favorite products finally together</h2>
+    <body>
+        <!-- NavBar start -->
 
-    <section class="brands">
-       
-            <div class="brands_div">
-                <div class="parent_icon1">
-                   <img class="brand_icon" src="Images-fonts/slack-full.png" alt="slack">
-                   <img class="brand_icon" src="Images-fonts/trello.png" alt="trello">
-                </div>
-
-                <div class="parent_icon2">
-                    <img class="brand_icon" src="Images-fonts/google.png" alt="google">
-                    <img class="brand_icon" src="Images-fonts/jira.png" alt="Jira">
-                </div>
-
-                <img class="brand_icon5" src="Images-fonts/asana.png" alt="asana">
-
-         
-             </div>
-        
-       
-    </section>
-
-    <footer class="footer">
-        <h1 class="footer_title">Stay up to date</h1>
-        <form class="footer_form" action="email">
-            <label for="email"></label>
-            <input type="email"  class="footer_email" name="email" placeholder="Email address">
-
-            <label  for="button"></label>
-            <input value="DOWNLOAD" type="submit" class="footer_button" name="button" placeholder="DOWNLOAD">
-        </form>
-            <div class="footer_parent">
-                <ul class="footer_links">
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">OUR TEAM</a></li>
-                    <li><a href="#">POLICIES</a></li>
-                    <li><a href="#">PRIVACY $ TERMS</a></li>
-
+        <nav class="navbar">
+            <!-- title -->
+            <p class="brand-title">Brand Name</p>
+            <!-- hamburger menu -->
+            <a href="#" id="toggle-button" class="toggle-button">
+                <!-- spans are used to represent each bar -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- nav-links -->
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-    </footer>
-</body>
-</html>
+        </nav>
+        <!-- NavBar end -->
+    
+        <div class="hero">
+            <div class="hero_title"> <h1>All your<br> communication. <br> One place. </h1> </div>
+            <img class="hero_card" src="Images-fonts/inbound-card.png">
+        </div>
+    
+        <section class="cards">
+          <h2 class="cards_title">The features that matter</h2>
+            <div class="cards_parent">
+                <div class="cards_card"> <p>Mark off your completed threads in one place</p> <img src="Images-fonts/features-checkboxes.png" alt="checkbox"> </div>
+                <div class="cards_card"> <p>Integrate all your communications platforms</p> <img src="Images-fonts/features-integrations.png" alt="integration icons"></div>
+                <div class="cards_card"><p>See all your notifications in one place</p> <img src="Images-fonts/features-notifications.png" alt="notifications icons"></div>
+            </div> 
+             <div class="cards_picture"><img class="cards_picture" src="Images-fonts/zenith-dasboard.png"></div>
+
+        </section>
+        
+        <h2 class="brand_title"> Your favorite products finally together</h2>
+    
+        <section class="brands">
+           
+                <div class="brands_div">
+                    <img class="brand_icon1" src="Images-fonts/slack-full.png" alt="slack">
+                    <img class="brand_icon2" src="Images-fonts/trello.png" alt="trello">
+                    <img class="brand_icon3" src="Images-fonts/google.png" alt="google">
+                    <img class="brand_icon4" src="Images-fonts/jira.png" alt="Jira">
+                    <img class="brand_icon5" src="Images-fonts/asana.png" alt="asana">
+                 </div>
+            
+           
+        </section>
+    
+        <footer class="footer">
+            <h1 class="footer_title">Stay up to date</h1>
+            <form class="footer_form" action="email">
+                <label for="email"></label>
+                <input type="email"  class="footer_email" name="email" placeholder="Email address">
+    
+                <label  for="button"></label>
+                <input value="DOWNLOAD" type="submit" class="footer_button" name="button" placeholder="DOWNLOAD">
+            </form>
+                <div class="footer_parent">
+                    <ul class="footer_links">
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">OUR TEAM</a></li>
+                        <li><a href="#">POLICIES</a></li>
+                        <li><a href="#">PRIVACY $ TERMS</a></li>
+    
+                    </ul>
+                </div>
+        </footer>
+    </body>
+    </html>
