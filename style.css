@@ -32,36 +32,52 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #333;
-  color: white;
+  color: black;
 }
 
-.navbar .navbar-title {
+.brand-title {
   font-size: 1rem;
   margin: 1em;
-  margin-right: 3em;
+  margin-right: auto;
+  width: 120px;
 }
 
-.navbar .navbar-links.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar .navbar-links {
+.navbar-links {
   width: 100%;
+  /* display: flex; */
   display: none;
 }
 
-.navbar .navbar-links a {
+.navbar-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   width: 100%;
-  text-decoration: none;
-  color: white;
-  /* padding: 1rem; */
-  font-size: .75rem;
 }
 
-.navbar .navbar-links .toggle-button {
+.navbar-links li {
+  list-style: none;
+  width: 100%;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.navbar-links a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  /* padding: 1rem; */
+  font-size: 0.75rem;
+}
+
+.toggle-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -79,32 +95,25 @@ body {
   height: 21px;
 }
 
-.navbar .navbar-links .toggle-button .bar {
+.toggle-button .bar {
+  display: inline-block;
+  height: 3px;
+  width: 130%;
+  background-color: #ab00ff;
+}
+
+.toggle-button .bar2 {
   display: inline-block;
   height: 3px;
   width: 100%;
-  background-color: white;
+  margin-left: 8px;
+  background-color: #ab00ff;
 }
 
-.navbar .navbar-links ul {
+.navbar-links.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
-
-.navbar .navbar-links ul li {
-  list-style: none;
-  width: 100%;
-}
-
-.navbar .navbar-links ul li:hover {
-  background-color: #555;
 }
 
 .hero {
@@ -302,7 +311,7 @@ body {
 }
 
 .footer .footer_parent {
-  height: 65%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,6 +352,50 @@ body {
 }
 
 @media (min-width: 550px) {
+  .toggle-button {
+    display: none;
+  }
+  .brand-title {
+    margin: 0;
+    padding: 0;
+    margin-right: 200px;
+  }
+  .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .navbar-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1em;
+    width: 49%;
+  }
+  .navbar-links .button {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ab00ff), to(#007bff));
+    background: linear-gradient(#ab00ff, #007bff);
+    border-radius: 10px;
+    height: 20px;
+    font-family: heavy;
+  }
+  .navbar-links .button a {
+    color: white;
+    text-align: center;
+  }
+  .navbar-links ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .footer_button {
     border: none;
     width: 160px;
@@ -477,6 +530,13 @@ body {
   }
   .cards .cards_card img {
     width: 20px;
+  }
+  .hero .hero_title {
+    font-size: 100%;
+  }
+  .hero .hero_card {
+    width: 500px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
